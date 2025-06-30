@@ -78,28 +78,26 @@ main {
 
 
 .zoom-img-container {
-    height: 180px; /* Adjust this value as needed for your design */
-    overflow: hidden; /* Ensures any part of the image overflowing the fixed height is hidden */
-    display: flex; /* Use flexbox to easily center the image if needed */
+    height: 180px;
+    overflow: hidden;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Style for the image itself within the container */
 .zoom-img-container img {
-    width: 100%; /* Make the image fill the width of its container */
-    height: 100%; /* Make the image fill the height of its container */
-    object-fit: cover; /* This is crucial: it crops the image to cover the area, maintaining aspect ratio */
-    object-position: center; /* Centers the image within its container */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
-/* New CSS for zoom effect */
 .zoom-img {
-    transition: transform 0.3s ease; /* Smooth transition for the zoom effect */
+    transition: transform 0.3s ease;
 }
 
 .zoom-img.zoomed {
-    transform: scale(1.1); /* Zooms the image to 110% of its original size */
+    transform: scale(1.1);
 }
 
 

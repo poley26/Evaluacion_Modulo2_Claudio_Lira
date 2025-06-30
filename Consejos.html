@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amenazas Ciberseguridad Cladio Lira</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style_Consejos.css">
+
+</head>
+<body>
+    <div class="d-flex flex-column min-vh-100">
+        <nav class="navbar bg-primary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="Imagenes/Logo.svg" alt="Logo" id="logo">
+                </a>
+
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="Introduccion.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="Amenazas.html">Amenazas Comunes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="Consejos.html">Consejo de Seguridad</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        
+            <div class="container-fluid" style="padding: 0;">
+                <div id="carrusel" class="carousel slide" data-bs-ride="carousel" style="margin: 0;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagenes/banner1.png" class="d-block w-100" alt="Seguridad en la Nube">
+                            <div class="carousel-caption">
+                                <p>
+                                    Buenas prácticas para protegerte en línea
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="amanezas" class="bg-image text-black py-4">
+                <p class="catalog-title text-black">Buenas Prácticas</p>
+                <div class="contenedorParrafo">
+                    <div class="container mt-5">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <i class="bi bi-key-fill text-primary me-2"></i>
+                                        Utiliza **contraseñas seguras y diferentes** para cada cuenta. Considera un gestor de contraseñas.
+                                    </li>
+                                    <li class="list-group-item">
+                                        <i class="bi bi-shield-lock-fill text-primary me-2"></i>
+                                        Activa la **autenticación de dos factores (2FA)** siempre que sea posible. Añade una capa extra de seguridad.
+                                    </li>
+                                    <li class="list-group-item">
+                                        <i class="bi bi-link-45deg text-primary me-2"></i>
+                                        **No hagas clic en enlaces sospechosos** ni descargues archivos de fuentes desconocidas. Verifica siempre la legitimidad.
+                                    </li>
+                                    <li class="list-group-item">
+                                        <i class="bi bi-arrow-clockwise text-primary me-2"></i>
+                                        **Mantén tu sistema operativo y software antivirus actualizados**. Las actualizaciones suelen incluir parches de seguridad cruciales.
+                                    </li>
+                                    <li class="list-group-item">
+                                        <i class="bi bi-wifi-off text-primary me-2"></i>
+                                        **Evita conectarte a redes Wi-Fi públicas sin protección** (VPN). Son puntos comunes para ataques de intermediario.
+                                    </li>
+                                    <li class="list-group-item">
+                                        <i class="bi bi-cloud-arrow-up-fill text-primary me-2"></i>
+                                        Realiza **copias de seguridad** de tus datos importantes de forma regular.
+                                    </li>
+                                    <li class="list-group-item">
+                                        <i class="bi bi-person-x-fill text-primary me-2"></i>
+                                        Sé cauteloso con la información personal que compartes en línea. Piensa dos veces antes de publicar.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br><hr><br>
+                <p class="catalog-title text-black">Formulario de Contacto</p>
+                <div class="contenedorParrafo">
+                    <div class="container mt-5">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <section>
+                                    <form id="contactoForm" novalidate>
+                                        <div class="mb-3">
+                                            <label for="nombre" class="form-label">Nombre</label>
+                                            <input type="text" class="form-control" id="nombre" name="nombre" required>
+                                            <div class="invalid-feedback">
+                                                Por favor, ingresa tu nombre.
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="correo" class="form-label">Correo Electrónico</label>
+                                            <input type="email" class="form-control" id="correo" name="correo" required>
+                                            <div class="invalid-feedback">
+                                                Por favor, ingresa un correo electrónico válido.
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="mensaje" class="form-label">Mensaje</label>
+                                            <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+                                            <div class="invalid-feedback">
+                                                Por favor, ingresa tu mensaje.
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-success">Enviar</button>
+                                    </form>
+                                    <div id="alerta" class="alert mt-3 d-none" role="alert"></div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br><hr><br>
+
+
+                <section class="mt-5 text-center">
+                    <h2>Prueba tus conocimientos</h2><br><br>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#testModal">Realizar Test</button>
+                  </section>
+                  <br>
+                  <!-- Modal Test -->
+                  <div class="modal fade" id="testModal" tabindex="-1">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Test de Seguridad</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                          <form id="testForm">
+                            <p>1. ¿Qué es phishing?</p>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="p1" value="correcto">
+                              <label class="form-check-label">Un intento de engaño para robar información</label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="p1" value="falso">
+                              <label class="form-check-label">Una técnica de navegación</label>
+                            </div>
+              
+                            <p class="mt-3">2. ¿Qué deberías hacer si recibes un correo sospechoso?</p>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="p2" value="correcto">
+                              <label class="form-check-label">No hacer clic y reportarlo</label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="p2" value="falso">
+                              <label class="form-check-label">Responder para verificar</label>
+                            </div>
+              
+                            <div class="mt-4 text-end">
+                              <button type="submit" class="btn btn-success">Enviar Respuestas</button>
+                            </div>
+                          </form>
+                          <div id="resultadoTest" class="mt-3 fw-bold"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+            </div>
+        
+
+        <footer class="mt-auto bg-dark text-white pt-5 pb-3">
+            <div class="container">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0">&copy; 2025 Claudio Lira. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/script_Consejos.js"></script>
+</body>
+</html>

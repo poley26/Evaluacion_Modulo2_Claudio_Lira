@@ -1,0 +1,117 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.nav-item a {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#logo {
+    width: 7.5em;
+    height: auto;
+    margin: 0;
+}
+
+
+.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#carrusel .carousel-item img {
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.9;
+}
+
+#carrusel .carousel-caption p {
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    padding: 0 15px;
+}
+
+
+#amanezas{
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 30px;
+    overflow: hidden;
+    width: calc(100% - 80px);
+    max-width: calc(100% - 80px);
+    text-align: center;
+}
+
+.catalog-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.contenedorParrafo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+}
+
+
+.zoom-img-container {
+    height: 180px; /* Adjust this value as needed for your design */
+    overflow: hidden; /* Ensures any part of the image overflowing the fixed height is hidden */
+    display: flex; /* Use flexbox to easily center the image if needed */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the image itself within the container */
+.zoom-img-container img {
+    width: 100%; /* Make the image fill the width of its container */
+    height: 100%; /* Make the image fill the height of its container */
+    object-fit: cover; /* This is crucial: it crops the image to cover the area, maintaining aspect ratio */
+    object-position: center; /* Centers the image within its container */
+}
+
+/* New CSS for zoom effect */
+.zoom-img {
+    transition: transform 0.3s ease; /* Smooth transition for the zoom effect */
+}
+
+.zoom-img.zoomed {
+    transform: scale(1.1); /* Zooms the image to 110% of its original size */
+}
+
+
+@media (max-width: 767.98px) {
+    #carrusel .carousel-caption p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #carrusel .carousel-caption p {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+}

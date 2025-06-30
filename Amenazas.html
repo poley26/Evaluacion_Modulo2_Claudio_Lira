@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amenazas Ciberseguridad Cladio Lira</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style_Amenazas.css">
+
+</head>
+<body>
+    <div class="d-flex flex-column min-vh-100">
+        <nav class="navbar bg-primary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="Imagenes/Logo.svg" alt="Logo" id="logo">
+                </a>
+
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="Introduccion.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="Amenazas.html">Amenazas Comunes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="Consejos.html">Consejo de Seguridad</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="flex-grow-1">
+            <div class="container-fluid" style="padding: 0;">
+                <div id="carrusel" class="carousel slide" data-bs-ride="carousel" style="margin: 0;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagenes/banner1.png" class="d-block w-100" alt="Seguridad en la Nube">
+                            <div class="carousel-caption">
+                                <p>
+                                    Las amenazas de ciberseguridad se refieren a cualquier acción o evento que pueda comprometer la seguridad de
+                                    sistemas, redes o datos. Estas amenazas pueden incluir malware, ransomware, phishing, ataques de denegación de
+                                    servicio (DoS), ataques de intermediario (MitM), entre otros.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="amanezas" class="bg-image text-black py-4">
+                <p class="catalog-title text-black">Amenazas Cibernéticas Comúnes</p>
+                <div class="contenedorParrafo">
+                    <div class="container mt-5">
+                        <div class="row justify-content-center">
+
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <div class="card h-100 shadow-sm">
+                                    <div class="zoom-img-container">
+                                        <img src="imagenes/Phising.png" class="card-img-top zoom-img" alt="Phishing">
+                                    </div>
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Phishing</h5><br>
+                                        <div class="mt-auto d-flex justify-content-between align-items-right">
+                                            <a href="#" class="btn btn-primary boton-reservar" data-bs-toggle="modal" data-bs-target="#modalPhishing">Información</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <div class="card h-100 shadow-sm">
+                                    <div class="zoom-img-container">
+                                        <img src="imagenes/ransoware.png" class="card-img-top zoom-img" alt="Ransomware">
+                                    </div>
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Ransomware</h5><br>
+                                        <div class="mt-auto d-flex justify-content-between align-items-right">
+                                            <a href="#" class="btn btn-primary boton-reservar" data-bs-toggle="modal" data-bs-target="#modalRansomware">Información</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <div class="card h-100 shadow-sm">
+                                    <div class="zoom-img-container">
+                                        <img src="imagenes/malware.png" class="card-img-top zoom-img" alt="Malware">
+                                    </div>
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Malware</h5><br>
+                                        <div class="mt-auto d-flex justify-content-between align-items-right">
+                                            <a href="#" class="btn btn-primary boton-reservar" data-bs-toggle="modal" data-bs-target="#modalMalware">Información</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <div class="card h-100 shadow-sm">
+                                    <div class="zoom-img-container">
+                                        <img src="imagenes/ataque_ddos.png" class="card-img-top zoom-img" alt="Ataques_DDoS">
+                                    </div>
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Ataques DDoS</h5><br>
+                                        <div class="mt-auto d-flex justify-content-between align-items-right">
+                                            <a href="#" class="btn btn-primary boton-reservar" data-bs-toggle="modal" data-bs-target="#modalDDoS">Información</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <p class="catalog-title text-black">Casos Reales</p>
+                <div class="contenedorParrafo">
+                    <div class="accordion accordion-flush" id="accordionCasosReales">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingPhishingCase">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePhishingCase" aria-expanded="false" aria-controls="collapsePhishingCase">
+                                    Caso Real: Ataque de Phishing a Twitter (2020)
+                                </button>
+                            </h2>
+                            <div id="collapsePhishingCase" class="accordion-collapse collapse" aria-labelledby="headingPhishingCase" data-bs-parent="#accordionCasosReales">
+                                <div class="accordion-body">
+                                    <p>En julio de 2020, un ataque de phishing de "spear phishing" dirigido a empleados de Twitter permitió a los atacantes acceder a las herramientas internas de la compañía. Esto les permitió tomar el control de cuentas de alto perfil, incluyendo las de Elon Musk, Bill Gates, Barack Obama y Apple, para publicar mensajes fraudulentos pidiendo donaciones en Bitcoin. Los atacantes lograron robar más de $100,000 en criptomonedas antes de que el ataque fuera detenido.</p>
+                                    <p><strong>Tipo de ataque:</strong> Phishing, Ingeniería Social.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingRansomwareCase">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRansomwareCase" aria-expanded="false" aria-controls="collapseRansomwareCase">
+                                    Caso Real: Ataque de Ransomware a Colonial Pipeline (2021)
+                                </button>
+                            </h2>
+                            <div id="collapseRansomwareCase" class="accordion-collapse collapse" aria-labelledby="headingRansomwareCase" data-bs-parent="#accordionCasosReales">
+                                <div class="accordion-body">
+                                    <p>En mayo de 2021, Colonial Pipeline, la empresa operadora del sistema de oleoductos más grande de Estados Unidos, fue víctima de un ataque de ransomware perpetrado por el grupo DarkSide. El ataque llevó al cierre temporal de las operaciones del oleoducto, causando escasez de combustible y pánico en varias regiones. La empresa pagó un rescate de 4.4 millones de dólares en Bitcoin para recuperar el control de sus sistemas, aunque el FBI logró recuperar una parte del dinero.</p>
+                                    <p><strong>Tipo de ataque:</strong> Ransomware.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingMalwareCase">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMalwareCase" aria-expanded="false" aria-controls="collapseMalwareCase">
+                                    Caso Real: Malware Stuxnet (2010)
+                                </button>
+                            </h2>
+                            <div id="collapseMalwareCase" class="accordion-collapse collapse" aria-labelledby="headingMalwareCase" data-bs-parent="#accordionCasosReales">
+                                <div class="accordion-body">
+                                    <p>Stuxnet es un gusano informático que se descubrió en 2010 y se considera el primer malware conocido capaz de atacar sistemas de control industrial (SCADA). Se cree que fue desarrollado por Estados Unidos e Israel para atacar el programa nuclear de Irán. Stuxnet se infiltró en las instalaciones nucleares iraníes y causó fallas en las centrifugadoras de enriquecimiento de uranio, retrasando significativamente su programa. Demostró la capacidad del malware para causar daño físico en el mundo real.</p>
+                                    <p><strong>Tipo de ataque:</strong> Malware (Gusano).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingDDoSCase">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDDoSCase" aria-expanded="false" aria-controls="collapseDDoSCase">
+                                    Caso Real: Ataque DDoS a Dyn (2016)
+                                </button>
+                            </h2>
+                            <div id="collapseDDoSCase" class="accordion-collapse collapse" aria-labelledby="headingDDoSCase" data-bs-parent="#accordionCasosReales">
+                                <div class="accordion-body">
+                                    <p>En octubre de 2016, el proveedor de servicios DNS Dyn sufrió una serie de masivos ataques DDoS que afectaron la disponibilidad de numerosos sitios web populares en Estados Unidos y Europa, incluyendo Twitter, Spotify, Netflix, Reddit, Amazon y PayPal. Los ataques fueron facilitados por la botnet Mirai, que comprometió una gran cantidad de dispositivos IoT (Internet de las Cosas) vulnerables. Este incidente destacó la creciente amenaza de los ataques DDoS impulsados por botnets de IoT.</p>
+                                    <p><strong>Tipo de ataque:</strong> Ataque de Denegación de Servicio Distribuido (DDoS).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="mt-auto bg-dark text-white pt-5 pb-3">
+            <div class="container">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0">&copy; 2025 Claudio Lira. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="modal fade" id="modalPhishing" tabindex="-1" aria-labelledby="modalPhishingLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalPhishingLabel">Phishing</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>El **phishing** es un tipo de ataque de ingeniería social que busca engañar a las víctimas para que revelen información sensible como nombres de usuario, contraseñas y detalles de tarjetas de crédito. Los atacantes a menudo se hacen pasar por entidades legítimas, como bancos, empresas de tecnología o servicios de correo electrónico, enviando correos electrónicos, mensajes de texto o llamadas telefónicas fraudulentas que parecen auténticos. El objetivo es que la víctima haga clic en enlaces maliciosos, descargue archivos infectados o proporcione directamente su información en sitios web falsos.</p>
+                    <p>**Cómo protegerse:**</p>
+                    <ul>
+                        <li>Verifica siempre el remitente y la URL antes de hacer clic en cualquier enlace.</li>
+                        <li>Sospecha de correos electrónicos con errores gramaticales o solicitudes inusuales.</li>
+                        <li>Usa autenticación de dos factores (2FA) siempre que sea posible.</li>
+                        <li>No abras archivos adjuntos de remitentes desconocidos.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalRansomware" tabindex="-1" aria-labelledby="modalRansomwareLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalRansomwareLabel">Ransomware</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>El **Ransomware** es un tipo de software malicioso que cifra los archivos de un usuario o bloquea el acceso a su sistema, y luego exige un pago (un "rescate") a cambio de restaurar el acceso. Los atacantes suelen pedir el pago en criptomonedas para mantener el anonimato. Si la víctima no paga, los datos pueden ser permanentemente inaccesibles o publicados. Es una de las amenazas más devastadoras para empresas y particulares debido a la pérdida potencial de datos y los altos costos de recuperación.</p>
+                    <p>**Cómo protegerse:**</p>
+                    <ul>
+                        <li>Realiza copias de seguridad de tus datos regularmente y almacénalas de forma segura.</li>
+                        <li>Usa un software antivirus y antimalware actualizado.</li>
+                        <li>Ten cuidado con los correos electrónicos y archivos adjuntos sospechosos.</li>
+                        <li>Mantén tu sistema operativo y aplicaciones actualizadas.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalMalware" tabindex="-1" aria-labelledby="modalMalwareLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalMalwareLabel">Malware</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>El **malware** (software malicioso) es un término general para cualquier programa diseñado para causar daño, interrumpir, robar datos o realizar acciones no autorizadas en un sistema informático. Incluye una amplia gama de amenazas como virus, gusanos, troyanos, spyware, adware y rootkits. El malware puede propagarse a través de descargas de software ilegítimo, correos electrónicos de phishing, sitios web comprometidos o unidades USB infectadas.</p>
+                    <p>**Cómo protegerse:**</p>
+                    <ul>
+                        <li>Instala y mantén actualizado un buen programa antivirus/antimalware.</li>
+                        <li>Sé precavido con las descargas de internet y los archivos adjuntos de correos electrónicos.</li>
+                        <li>Realiza escaneos regulares de tu sistema.</li>
+                        <li>Evita hacer clic en anuncios pop-up sospechosos.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalDDoS" tabindex="-1" aria-labelledby="modalDDoSLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalDDoSLabel">Ataques DDoS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Un **ataque de denegación de servicio distribuido (DDoS)** es un intento malicioso de interrumpir el tráfico normal de un servidor, servicio o red, saturándolo con un diluvio de tráfico de internet. A diferencia de un ataque DoS (denegación de servicio), un DDoS utiliza múltiples sistemas informáticos comprometidos como fuentes de tráfico de ataque, lo que lo hace mucho más difícil de mitigar. El objetivo es hacer que el recurso en línea sea inaccesible para sus usuarios previstos.</p>
+                    <p>**Cómo protegerse (generalmente para organizaciones/servicios online):**</p>
+                    <ul>
+                        <li>Implementa servicios de protección DDoS ofrecidos por proveedores de seguridad.</li>
+                        <li>Asegura una infraestructura de red robusta y escalable.</li>
+                        <li>Configura firewalls y sistemas de detección de intrusiones (IDS) para identificar y bloquear tráfico malicioso.</li>
+                        <li>Mantén un plan de respuesta a incidentes cibernéticos.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script_Amenazas.js"></script>
+</body>
+</html>
